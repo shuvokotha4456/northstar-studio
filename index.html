@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northstar Studio — Digital Product Design</title>
+  <meta name="description" content="Northstar Studio designs and builds digital products for teams setting the next standard." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#hero">NORTHSTAR<span>.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Start a project</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="hero__canvas-wrap">
+        <canvas id="webgl" aria-hidden="true"></canvas>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="eyebrow">Digital product studio</p>
+        <h1>We design digital products that feel <span>inevitable.</span></h1>
+        <p class="lede">
+          Strategy, interface design, and engineering for teams building the
+          next standard.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#contact">Start a project</a>
+          <a class="button button--ghost" href="#work">View work</a>
+        </div>
+
+        <div class="hero__meta">
+          <div><strong>18</strong><span>Products shipped</span></div>
+          <div><strong>9</strong><span>Industries served</span></div>
+          <div><strong>4.9</strong><span>Average partner rating</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#services">
+        <span>Scroll to explore</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="section container" id="services">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Capabilities</p>
+          <h2 class="section-title">From first sketch to shipped product.</h2>
+        </div>
+        <p class="section-copy">
+          We embed with your team to reduce ambiguity, raise the craft bar, and
+          ship experiences people trust.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="card">
+          <span class="card__num">01</span>
+          <h3>Product strategy</h3>
+          <p>Positioning, user research, opportunity mapping, and roadmaps that connect business goals to real user needs.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">02</span>
+          <h3>Interface design</h3>
+          <p>Design systems, high-fidelity UI, motion, and prototypes that make complex products feel simple.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">03</span>
+          <h3>Engineering</h3>
+          <p>Production-ready front ends, 3D experiences, and performance-minded implementation built to last.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="work">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">Built for clarity, speed, and trust.</h2>
+        </div>
+      </div>
+
+      <div class="work-grid">
+        <a class="work-item work-item--a" href="#contact">
+          <span class="work-item__tag">Fintech platform</span>
+          <h3>Meridian</h3>
+          <p>A calmer way to manage institutional cash flow.</p>
+        </a>
+        <a class="work-item work-item--b" href="#contact">
+          <span class="work-item__tag">Health tech</span>
+          <h3>Atlas Care</h3>
+          <p>Patient onboarding redesigned around real clinical workflows.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contact">
+      <p class="eyebrow">Start here</p>
+      <h2 class="contact__title">Have a product that deserves a sharper experience?</h2>
+      <p class="section-copy">
+        Tell us what you are building. We will reply within two business days
+        with a clear next step.
+      </p>
+      <a class="button button--primary" href="mailto:hello@northstar.studio">hello@northstar.studio</a>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Northstar Studio. All rights reserved.</p>
+    <p>Designing digital products that feel inevitable.</p>
+  </footer>
+
+  <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
